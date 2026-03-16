@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    폼 태그는 여러개의 인풋을 묶어서 한꺼번에  전송 할 때 묶는 역할을 해 주는데
+    2가지 방식으로 전달이 가능함
+        1. GET방식
+            -주소줄에 내용을 전달하는 방식
+        2. POST방식
+            - 주소줄에 내용을 전달하지 않고, body에 내용을 전달하는 방식
+-->
+
+<h1>get방식</h1>
+    <form method="get" action="https://postman-echo.com/get?">
+
+        <label>이름:<input type="text" name="name"></label><br />
+        <label>이메일:<input type="email"name="email"></label><br />
+        <label>전화번호:<input type="password" name="name"></label> <br />
+        <button>전송</button>
+        <!--버튼에도 속성이 있음 : 기본속성 : 전송(submit) -->
+
+    </form>
+<!--label과 input은 세트!!-->
+
+    <h1>post방식</h1>
+    <form method="post" action="https://postman-echo.com/post?">
+
+        <label>이름:<input type="text" name="name"></label><br />
+        <label>이메일:<input type="email"name="email"></label><br />
+        <label>전화번호:<input type="password" name="name"></label> <br />
+        <button>전송</button>
+
+    </form>
+
+</body>
+</html>

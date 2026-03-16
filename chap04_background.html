@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="
+     background-color:#aaa;
+     width: 300px;
+     height: 300px;
+     border: 5px solid black;
+     border-radius: 30px;"
+>
+</div>
+
+<div style="background-image: url('images/image.png');
+width: 600px;
+height: 600px;
+background-repeat: no-repeat;">
+글자를 적습니다
+</div>
+
+
+<div style="background-image: url('images/image.png');
+width: 600px;
+height: 300px;
+background-repeat: no-repeat;
+background-size: cover;">
+    <!--영역 중심-->
+    <!--이미지 잘리더라도 영역 꽉 채우기-->
+글자를 적습니다
+</div>
+
+
+<div style="background-image: url('images/image.png');
+width: 600px;
+height: 300px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 100px 100px;">
+    <!--- background-position: center;-->
+    <!--이미지 중심-->
+    <!--이미지가 잘리면 안 됨-> 영역에 포함이 안 되더라도 이미지 전부 노출-->
+    <!--포지션 : 영역 안에 등러갈 이미지의 위치 조정-->
+글자를 적습니다
+</div>
+
+
+
+</body>
+</html>
