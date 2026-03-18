@@ -1,0 +1,143 @@
+body {
+    background-color: #f7f9fc;
+    /* 추가단위
+       vw, vh, dvh
+       vw: viewport width = 사용자가 보는 가로 화면의 크기
+       vh: viewport height = 사용자가 보는 세로 화면의 크기 (= 화면 자체)
+       dvh : dynamic viewport height =  */
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+h2 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e1e8ed;
+    color: #34495e;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 150px;
+    height: 180px;
+    background: #fafdfc;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    text-align : center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+}
+
+.translate:hover {
+    background-color: #2ecc71;
+    /* 요소의 이동  */
+    /* 속성 : transform   - 변화
+      속성값: translate(가로 이동량, 세로 이동량) - 이동
+              translate  X (가로 이동량)
+              translateY(세로 이동량) */
+    transform: translate(50px, -30px);
+    /* 애니메이션 효과 */
+    /* 몇 초에 걸쳐 효과를 보여주느 지 */
+    /* transition : 속성값
+        1. 어느 변화를 지정한즈냐
+        2. 얼마의 시간에 걸쳐 보여주느냐
+        3. 어떤 방식으로 보여주느냐 */
+    transition: all 1s linear;
+}
+
+
+.scale:hover {
+    /*
+    크기를 변화시키는 속성
+        속성 : transform
+        속성 값: scale (가로배율, 세로배율)
+                scale (배율)
+     */
+    transform:scale(1.5);
+    transition: all 0.5s linear;
+}
+
+
+.rotate:hover {
+    /* 요소의 회전
+    속성 : transform
+    속성 값:
+     */
+    transform: rotate(720deg);
+    transition: all 1s linear;
+}
+
+.skew:hover {
+    /*
+            요서의 비틀기
+            속성 : transform
+            속성값: stew (x,축 각도,)
+                    stew (x축 각도, y축 각도)
+                    x축 각도: 왼쪽 오른쪽
+                    y축각도 : 위, 아래
+     */
+    transform: skew(-30deg);
+    transition: all 0.5s linear;
+}
+
+.origin:hover {
+    /*
+
+     */
+    transform-origin: top left;
+    transform: rotate(90deg);
+    transition: all 0.2s linear;
+}
+
+.opacity:hover {
+    opacity: 0;
+    transition: all 0.5s linear;
+}
