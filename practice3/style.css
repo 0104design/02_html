@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e293b;
+    overflow: hidden;      /* 스크롤 바가 생기지 않음 */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    height: 90vh;
+    gap: 20px;      /* 자식 사이의 여백 */
+}
+
+.card {
+    width: calc(50% - 10px);   /* 동적으로 갑이 계속변경됨.  상대값과 절대값을 계산할 때 사용 */
+    background-color: white;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.storage-area {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hdd-card {     /* 하나의 원과 dot, text(4TB)를 포함하는 영역 */
+    justify-content: center;
+    align-items: center;        /* 이미 card에 적용됨 (display: flex가) */
+}
+
+.hdd-icon {         /* 바깥 원 요소  */
+    width: 100px;
+    height: 100px;
+    background-color: #1e293b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdd-inner {        /* 안쪽 원 요소 */
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.hdd-footer {       /* 문자, dot 모두 포함하는 영역 */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hdd-size {         /* 문자 */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hdd-dots {
+    display: flex;
+    gap: 4px;
+}
+
+.hdd-dots > div {       /* dot영역 */
+    width: 6px;
+    height: 6px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+
+.hdd-dots div:first-child {     /*처음 dot 부분 */
+    background-color: #1e293b;
+}
+
+.space-card {       /* 하단 카드 영역 */
+    justify-content: center;
+    gap: 30px;
+}
+
+.space-item > h3 {      /* 상단 소제목 */
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.space-item > h2 {      /* 하단 제목 */
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.accent {
+    color: #3b82f6;     /* 하단 제목( 그 중에서도 2.34 )에게만 부여함, 글자 색 변경 */
+}
+
+.setting-card {         /* 하단 우측 버튼 영역의 부모 */
+    justify-content: center;
+    gap: 12px;
+}
+
+.setting-card > button {
+    padding: 16px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    font-size: 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #334155;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.setting-card > button:hover {
+    background-color: #1e293b;
+    color: white;
+}
+
+.stats-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+.stats-row {
+    flex: 1;
+    border-radius: 24px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight:600;
+    background-color: #f8fafc;
+    color: #2ecc71;
+}
+
+
+.stats-row:first-child {
+    background-color: #dbecf4;
+    color: #4b6ea1
+}
+
+.stats-row:nth-child(2) {
+    background-color: #b6d0e1;
+    color: #496180;
+}
+
+.stats-row:nth-child(3) {
+    background-color: #678dab;
+    color: #205cc1;
+}
+
+.stats-row:nth-child(4) {
+    background-color: #2d5f87;
+    color: #acc6f6;
+}
+
+.stats-row:last-child {
+    background-color: #407faf;
+    color: #dbeaff
+}
+
+.bg-slate {
+    background-color: #e1e5e9;
+    color: #475569;
+}
+
+
+
+
