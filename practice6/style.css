@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8f8f8;
+    color: #334155;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    border-bottom: 1px solid #e2e8e8;
+}
+
+.header-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.header-title span {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.header-btn {
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header-btn:hover {
+    background: #2563eb;
+}
+
+.table-wrapper {
+    width: 100%;
+}
+
+.data-table {
+    border-collapse: collapse;      /* 테이블 셀 사이의 여백 제거 */
+    width: 100%;
+}
+
+.data-table th {
+    background: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px 30px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.data-table th:last-child {
+    text-align: center;
+}
+
+.data-table td {
+    padding: 20px 30px;
+    font-size: 15px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.device-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-box {
+    width: 34px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.icon-right {
+    background-color: #9bd5ff;
+}
+
+.icon-thermostat {
+    background-color: #75b9ff;
+}
+
+.icon-coffee {
+    background-color: #74b2ff;
+}
+
+.icon-camera {
+    background-color: #2D75EC;
+}
+
+.device-name {
+    color: #0f172a;
+}
+
+.status-badge {
+    display: inline-flex;       /* flex를 하면서도 inline 효과를 주고 싶을 때 ㅇ사용 */
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.badge-online {
+    background: #b5dbff;
+    color: #000000;
+}
+.badge-offline {
+    background: #4296d9;
+    color: #ffffff
+}
+
+.badge-standby {
+    background: #e8f3ff;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot-first {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #9cbfe7;
+}
+
+.badge-online .status-dot {
+    background: #2b7dad;
+}
+
+.badge-offline .status-dot {
+    background: #3164c7;
+}
+
+.battery-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.battery-bar {
+    width: 80px;
+    height: 8px;
+    background-color: #e2e8e8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.battery-fill {
+    height: 100%;
+    background-color: #7bbbf3;
+    border-radius: 4px;
+}
+
+.battery-text {
+    font-size: 14px;
+    color: #64748b;
+    width: 35px;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.fill-low {
+    background-color: #3276b4;
+}
+
+.text-low {
+    color: #3276b4;
+    font-weight: 700;
+}
+
+.action-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-edit {
+    background-color: transparent;      /*부모의 값을 물려받음 */
+    border: 1px solid #bbd2ee;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.btn-edit:hover {
+    background: #3b82f6;
+    border-color: #244482;
+    color: white;
+}
+
