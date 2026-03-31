@@ -40,11 +40,50 @@
             </div>
             <div class="user-shortcut">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <div class="user-avatar-small">A</div>
+                <div class="user-avatar-small"></div>
             </div>
         </header>
 
-        <div class="content-wrapper"></div>
+        <div class="content-wrapper">
+            <form class="profile-form">
+                <div class="avatar-section">
+                    <div class="avatar-circle">A</div>
+                    <button class="btn-primary btn"><i class="fa-solid fa-cloud-arrow-up"></i>upload
+                    </button>
+                    <button class="btn-outline btn"><i class="fa-solid fa-trash-can"></i>Remove
+                    </button>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form=input" id="firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form=input" id="lastname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form=input" id="email">
+                    </div>
+                </div>
+                <div class="phone-number">
+                    <div class="form-group">
+                        <label for="phoneNumber">Email</label>
+                        <input type="text" class="form=input" id="phoneNumber" value="abc@abc.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <!-- 체크박스 들어가는 자리-->
+                </div>
+                <div class="form-actions">
+                    <button class="btn btn-outline">Cancel</button>
+                    <button class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
+        </div>
     </main>
 </div>
 </body>
