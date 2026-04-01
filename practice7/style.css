@@ -205,17 +205,57 @@ body {
     border-radius: 8px;
     font-size: 15px;
     color: #111827;
+    margin-bottom: 20px;
 }
 
 .form-group input:focus {
     outline: none;
     border-color: #2563eb;
 }
+
+.custom-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.hidden-checkbox {
+    display: none;      /* 화면에 출력죄지 않게 함, 대신 html코드느 있음. */
+}
+
+.checkbox-box {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d1d3d6;
+    display: flex;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: all 0.2s;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+
+.checkmark-icon {
+    width: 6px;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.hidden-checkbox:checked +  .checkbox-box{      /* + 는 형제관계 선택 시 사용 */
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
 .form-actions {
     display: flex;
     justify-content: flex-end;
     gap: 15px;
     margin-top: 30px;
-    padding-top:  30px;
+    padding-top: 30px;
     border-top: 1px solid #e5e7eb;
 }
